@@ -54,7 +54,7 @@ function mostrarHTML(){
 
             //creamos el card
             const div = document.createElement('div');
-            div.classList.add('card', 'w-100', 'my-1');
+            div.classList.add('tarjeta', 'card', 'w-100', 'my-2');
             div.innerHTML = `
             <div class="card-body">
             <h5 class="card-title text-center">${tarea}</h5>

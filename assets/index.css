@@ -1,0 +1,8 @@
+.tarjeta{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all ease 1s;
+}
+.tarjeta:hover{
+    transform: translateY(-5px);
+    background-color: rgb(203, 221, 241);
+}
