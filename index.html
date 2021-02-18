@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <title>Tweets</title>
+  </head>
+  <style>
+      body{
+        background-color: #34495e;
+      }
+      .cont{
+          background-color: #2c3e50;
+      }
+  </style>
+  <body>
+    <blockquote class="blockquote text-center p-2 ">
+      <h3 class="mb-0 text-warning">Block de Notas</h3>
+      <footer class="blockquote-footer text-muted">-AlejandroNes</footer>
+    </blockquote>
+    <div class="container cont p-4  shadow-sm">
+      <div class="row">
+        <div class="col-12 col-sm-5">
+          <h5 class="font-weight-light text-info text-center ">Añadir Tarea</h5>
+          <form id="formulario">
+            <input
+              type="text"
+              class="form-control"
+              id="tarea"
+              placeholder="titulo de la tarea"
+            />
+            <textarea
+              class="form-control mt-2"
+              placeholder="descripcion"
+              id="descripcion"
+              rows="2"
+            ></textarea>
+            <input
+            id="boton"
+              type="submit"
+              value="agreagar"
+              class="btn btn-info btn-block my-2"
+            />
+          </form>
+          <div id="alerta">
+         
+          </div>
+        </div>
+        <div class="col-12 col-sm-7">
+          <h5 class="font-weight-light text-info text-center mt-4 mt-sm-0">
+            Lista de tareas
+          </h5>
+          <div id="respuesta">
+              <h4 class="text-center mt-5 text-muted">Aqui se mostraran </h4>
+              <h4 class="text-center text-muted">tus notas</h4>
+              
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
